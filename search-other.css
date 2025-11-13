@@ -1,0 +1,338 @@
+/* ----------  search-other.css – 100% Responsive (Cini Bhai Final Fixed) ---------- */
+
+/* RESET + GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 0 5vw;
+  height: 80px;
+  overflow: hidden;
+}
+.nav-logo img {
+  width: 110px;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: color 0.3s, border-top 0.3s;
+}
+.nav a:hover {
+  color: #3182b5;
+  border-top: 4px solid #3182b5;
+  padding-top: 20px;
+}
+.nav-cart {
+  font-size: 26px;
+  color: #000;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+/* ---------- SEARCH SECTION ---------- */
+.heading {
+  background: #b3d1e4;
+  text-align: center;
+  padding: 40px 15px 0;
+}
+.search-box {
+  background: #b3d1e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+  position: relative;
+}
+.search-box input {
+  width: 100%;
+  max-width: 900px;
+  padding: 15px 15px 15px 45px;
+  font-size: 1.1rem;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+.search-box i {
+  position: absolute;
+  left: 50%;
+  transform: translate(-430px, -50%);
+  top: 50%;
+  opacity: 0.6;
+  font-size: 18px;
+  pointer-events: none;
+}
+.atag {
+  background: #b3d1e4;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 15px 35px;
+}
+.atag a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding-bottom: 5px;
+  border-bottom: 4px solid transparent;
+  transition: 0.25s;
+}
+.atag a:hover {
+  color: #1c4762;
+  border-color: #3182b5;
+}
+hr {
+  height: 1px;
+  border: none;
+  background: linear-gradient(to right, #b3d1e4, #000, #b3d1e4);
+}
+
+/* ---------- RESULTS BLOCKS ---------- */
+.fp,
+.sp,
+.tp,
+.ffp,
+.ffpp,
+.sixp,
+.sevenp {
+  background: #b3d1e4;
+  padding: 0 5%;
+}
+.headings,
+.headings2,
+.headings3,
+.headings4,
+.headings5,
+.headings6,
+.headings7 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 0 40px;
+}
+.para {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+h3 {
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.para1 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------- CTA + FORM ---------- */
+.look {
+  text-align: center;
+  padding: 60px 15px;
+}
+.look h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.look h2 {
+  font-size: 1.4rem;
+  margin: 25px 0 30px;
+}
+.look button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.look button:hover {
+  background: #515151;
+}
+
+/* ---------- IKALL FORM (Compact & Clean) ---------- */
+.ikallform {
+  display: flex;
+  justify-content: center;
+  padding: 25px 15px 60px;
+}
+.iform {
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding: 25px 20px;
+  border-radius: 10px;
+}
+.iform span {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.iform input[type="email"] {
+  width: 100%;
+  height: 41px;
+  padding: 0 15px;
+  background: #215779;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+.iform input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.iform button {
+  width: 100%;
+  height: 41px;
+  background: #215779;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.iform button:hover {
+  background: #072a3f;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  background: #5b8dac;
+  padding: 40px 20px;
+  color: #000;
+}
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+.footer a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.f4 {
+  background: #5b8dac;
+  padding: 0 20px 40px;
+  text-align: center;
+}
+
+/* ---------- FOOTER BOTTOM (Centered) ---------- */
+.footer-bottom {
+  background: #5b8dac;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 5%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  gap: 12px;
+}
+.footer-logos {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.footer-logos img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.footer-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- RESPONSIVE TWEAKS ---------- */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 5%;
+  }
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+  .search-box i {
+    left: 30px;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .atag {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .iform {
+    max-width: 340px;
+    padding: 20px 15px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .look h1 {
+    font-size: 1.5rem;
+  }
+  .look h2 {
+    font-size: 1.2rem;
+  }
+  .iform {
+    width: 100%;
+  }
+}
